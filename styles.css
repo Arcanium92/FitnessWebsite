@@ -17,6 +17,14 @@ h1 {
     border: 1px;
 }
 
+/*text settings*/
+h1, h2, p {
+    text-shadow:
+        -1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
+
 header {
     background-color: white;
     border: 1px;
@@ -28,22 +36,17 @@ header {
 footer {
     color: black;
     text-align: center;
-    position: relative;
+    position: fixed;
     font-size: 20px;
     text-align: center;
     background-color: white;
     width: 80%;
     padding: 10px;
-    margin-top: 550px;
+    margin-top: 300px;
     margin-left: 150px;
     box-sizing: border-box;
     box-shadow: 3px 3px 3px white;
     border: 5px black;
-}
-
-/* Text settings */
-p {
-    color: rgb(228, 10, 10);
 }
 
 /* nav-list */
@@ -72,7 +75,7 @@ p {
     color: whitesmoke;
     background-image: url(weight.jpg);
     background-size: cover;
-    box-shadow: 5px 5px 5px white;
+    box-shadow: 5px 5px 5px gray;
     text-shadow:
         -1px -1px 0 #000,
         -1px 1px 0 #000,
@@ -85,9 +88,8 @@ p {
 
 /* container */
 .container {
-    color: black;
     text-align: center;
-    background-color: white;
+    background-color: gray;
     width: 80%;
     padding: 10px;
     margin-left: 150px;
@@ -96,3 +98,11 @@ p {
     border: 5px black;
 }
 
+/* columns */
+.column {
+    text-indent: 10px;
+    border: 1px #000;
+    height: 250px;
+    width: 20%;
+    background-color: gray;
+}
