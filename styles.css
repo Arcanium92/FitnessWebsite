@@ -9,6 +9,11 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;
     color: white;
+    font-size: large;
+    text-shadow:
+        -1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
 }
 
 h1 {
@@ -17,16 +22,8 @@ h1 {
     border: 1px;
 }
 
-/*text settings*/
-h1, h2, p {
-    text-shadow:
-        -1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;
-}
-
 header {
-    background-color: white;
+    background-color: gray;
     border: 1px;
     border-color: black 1px;
     font-size: 35px;
@@ -34,18 +31,15 @@ header {
 }
 
 footer {
-    color: black;
     text-align: center;
     position: fixed;
-    font-size: 20px;
-    text-align: center;
-    background-color: white;
+    bottom: 5px;
+    left: 160px;
     width: 80%;
-    padding: 10px;
-    margin-top: 300px;
-    margin-left: 150px;
-    box-sizing: border-box;
-    box-shadow: 3px 3px 3px white;
+    font-size: 20px;
+    background-color: gray;
+    padding-top: 10px;
+    box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.3);
     border: 5px black;
 }
 
@@ -62,13 +56,9 @@ footer {
 }
 
 .nav-list a {
-    color: black;
+    color: white;
     padding: 10px 10px;
     font-size: 35px;
-    text-shadow:
-        -1px -1px 0 white,
-        -1px 1px 0 white,
-        1px 1px 0 white;
 }
 
 .nav-list a:hover {
@@ -95,14 +85,66 @@ footer {
     margin-left: 150px;
     box-sizing: border-box;
     box-shadow: 3px 3px 3px white;
-    border: 5px black;
 }
 
 /* columns */
 .column {
+    margin-left: 150px;
     text-indent: 10px;
     border: 1px #000;
     height: 250px;
     width: 20%;
     background-color: gray;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 3px 3px white;
+}
+
+/* table settings */
+table {
+    margin: auto;
+}
+
+table, th, td {
+    border: 2px white solid;
+}
+
+th, td {
+    padding: 5px;
+    text-align: center;
+}
+
+td:hover {
+    background-color: black;
+}
+
+.class-entry {
+    margin-bottom: 5px;
+    padding: 5px;
+    border-left: 2px solid #007bff;
+}
+
+.class-entry1 {
+    margin-bottom: 5px;
+    padding: 5px;
+    border-left: 2px solid orange;
+}
+
+.class-entry2 {
+    margin-bottom: 5px;
+    padding: 5px;
+    border-left: 2px solid rgb(64, 46, 233);
+}
+
+.class-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.class-time {
+    font-size: 15px;
+}
+
+.class-instructor {
+    font-size: 20px;
+    font-style: italic;
 }
