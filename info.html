@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fit for Fun Fitness Club</title>
     <link rel="stylesheet" href="index.html">
     <link rel="stylesheet" href="classes.html">
     <link rel="stylesheet" href="info.html">
@@ -25,25 +25,49 @@
 
     <h1 class="container">Appointment Information</h1>
     <div class="input-field">
-        <form>
+        <form method="get" action="thankyou.html">
+
             <fieldset>
-                <legend>Contact Information</legend>
+                <legend>Contact Information&nbsp;& Selection</legend>
                 <label for="fname">
                     Name:
-                    <input autofocus type="text" name="fname" id="fname" placeholder="First Name">
+                    <input autofocus type="text" name="fname" required id="fnameinput" placeholder="First Name">
                 </label>
                 <label for="lname">
                     Last Name:
-                    <input type="text" name="lname" id="lname" placeholder="Last Name">
+                    <input type="text" name="lname" required id="lnameinput" placeholder="Last Name">
                 </label>
                 <label for="email">
                     Email:
-                    <input type="email" name="fname" id="email" placeholder="Email">
+                    <input type="email" name="email" required id="emailinput" placeholder="Email">
                 </label>
                 <label for="number">
                     Phone:
-                    <input type="number" name="number" id="number" placeholder="Phone">
+                    <input type="number" name="number" required id="numberinput" placeholder="Phone">
                 </label>
+                <!-- Contact preferences -->
+                <label for="contact-method">How may we reach you?</label>
+                <select name="contact-method" id="contact-method">
+                    <option value="email">Email</option>
+                    <option value="phone">Phone</option>
+                    <option value="text">Text</option>
+                    <option value="smokesignals">Smoke Signals</option>
+                </select>
+                <!-- Class choices -->
+                <h3>Class selection:</h3>
+                <label><input type="checkbox" name="classes" value="cross-training"> Cross Training</label><br>
+                <label><input type="checkbox" name="classes" value="sprint"> Sprint</label><br>
+                <label><input type="checkbox" name="classes" value="spin"> Spin</label><br>
+                <label><input type="checkbox" name="classes" value="bodypump"> BodyPump</label><br>
+                <label><input type="checkbox" name="classes" value="bodycombat"> BodyCombat</label><br>
+                <label><input type="checkbox" name="classes" value="step-interval"> Step Interval</label><br>
+                <label><input type="checkbox" name="classes" value="advanced-cross-training"> Advanced Cross
+                    Training</label><br>
+                <label><input type="checkbox" name="classes" value="mixxedfit"> MixxedFIT</label><br>
+                <label><input type="checkbox" name="classes" value="zumba"> Zumba</label><br>
+                <!-- Time of day -->
+                 <label><input type="radio" name="class-time" value="am"> AM</label>
+                 <label><input type="radio" name="class-time" value="pm"> PM</label>
             </fieldset>
             <input class="submit" type="submit" value="Submit">
 
